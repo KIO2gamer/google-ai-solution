@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Unbiased — A Field Review of Algorithmic Fairness</title>
+<meta name="description" content="An editorial investigation into bias detection, fairness audits, and accountability in automated decision systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="container meta-row mono">
+      <span>Vol. IV · Issue 09</span>
+      <span class="hide-sm">Tuesday, April 28, 2026</span>
+      <span>ISSN 2997-0142</span>
+    </div>
+    <div class="container">
+      <h1 class="logo">Un<span class="italic signal">b</span>iased</h1>
+      <div class="masthead-bottom">
+        <p class="mono tagline">A field review of fairness, accountability &amp; detected bias in automated decisions</p>
+        <nav class="mono nav">
+          <a href="#dispatch">Dispatch</a>
+          <a href="#methods">Methods</a>
+          <a href="#archive">Archive</a>
+          <a href="#subscribe">Subscribe</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track mono" id="tickerTrack"></div>
+  </div>
+
+  <section id="dispatch" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <p class="mono kicker signal">Lead investigation · 38 min read</p>
+        <h2 class="hero-title">Ensuring fairness, and the quiet art of <em class="signal">detecting bias</em> in automated decisions.</h2>
+        <p class="hero-dek">Every day, models decide who gets a loan, an interview, a diagnosis, a sentence. We pull eight production systems apart to ask the only question that matters — <span class="ink">who is paying the cost of the average?</span></p>
+        <div class="hero-actions">
+          <a href="#methods" class="link-arrow mono">Read the report <span>→</span></a>
+          <span class="mono byline">By M. Okafor, R. Lindqvist &amp; the Audit Desk</span>
+        </div>
+      </div>
+      <aside class="hero-figure reveal">
+        <div class="figure">
+          <div class="grain"></div>
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.25"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="500" fill="url(#grid)" />
+            <path d="M 20 380 Q 110 200 200 380 T 380 380" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M 20 380 Q 130 240 240 380 T 380 380" fill="none" stroke="var(--signal)" stroke-width="1.6" stroke-dasharray="3 3"/>
+            <line x1="220" y1="60" x2="220" y2="430" stroke="var(--signal)" stroke-width="1"/>
+            <text x="226" y="70" font-family="JetBrains Mono" font-size="9" fill="var(--signal)">τ = 0.54</text>
+            <g id="scatter"></g>
+            <text x="20" y="30" font-family="JetBrains Mono" font-size="9" fill="currentColor">FIG. 01 — DECISION SURFACE, GROUP A vs B</text>
+            <text x="20" y="460" font-family="JetBrains Mono" font-size="8" fill="currentColor" opacity="0.6">Score</text>
+            <text x="350" y="460" font-family="JetBrains Mono" font-size="8" fill="currentColor" opacity="0.6">P(approve)</text>
+            <text x="20" y="485" font-family="JetBrains Mono" font-size="9" fill="var(--signal)" font-style="italic">disparate impact ratio: 0.71</text>
+          </svg>
+        </div>
+        <p class="mono caption">Plate I — Threshold drift in a binary classifier, audited Mar. 2026.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><div class="stat-v">67%</div><div class="mono stat-l">of audited models showed measurable group disparity</div></div>
+    <div class="stat"><div class="stat-v">2.3×</div><div class="mono stat-l">error rate gap between best and worst served subgroups</div></div>
+    <div class="stat"><div class="stat-v">11</div><div class="mono stat-l">fairness metrics reconciled in our review framework</div></div>
+    <div class="stat"><div class="stat-v">0.04</div><div class="mono stat-l">median post-mitigation disparity, after intervention</div></div>
+  </section>
+
+  <section id="methods" class="articles">
+    <div class="container">
+      <div class="section-head">
+        <h3>In this issue</h3>
+        <span class="mono muted">Three readings</span>
+      </div>
+      <div class="articles-grid">
+        <article>
+          <div class="kicker-row"><span class="dot"></span><span class="mono signal">Case file 014</span></div>
+          <h4>The hiring model that learned to read zip codes.</h4>
+          <p>A Fortune-500 résumé screener was 92% accurate — and quietly redlined three metropolitan areas. We trace the proxy.</p>
+          <div class="article-foot mono"><span>By A. Volkov · 22 min</span><span class="arrow">→</span></div>
+        </article>
+        <article>
+          <div class="kicker-row"><span class="dot"></span><span class="mono signal">Method</span></div>
+          <h4>Counterfactual fairness, in practice.</h4>
+          <p>What changes when we ask: would the outcome differ if this person belonged to another group? A working notebook.</p>
+          <div class="article-foot mono"><span>By the Methods Desk · 14 min</span><span class="arrow">→</span></div>
+        </article>
+        <article>
+          <div class="kicker-row"><span class="dot"></span><span class="mono signal">Standards</span></div>
+          <h4>Eleven fairness metrics, reconciled.</h4>
+          <p>Demographic parity, equalised odds, calibration. They cannot all hold at once — and that is the point.</p>
+          <div class="article-foot mono"><span>By R. Lindqvist · 9 min</span><span class="arrow">→</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pullquote">
+    <div class="container pq-grid">
+      <p class="mono pq-kicker signal">On the record</p>
+      <blockquote>
+        <span class="signal">"</span>A model is not unbiased because no one complained. It is unbiased because someone <em>looked</em>, with the right instrument, at the right slice of the data — and then <em>kept looking.</em><span class="signal">"</span>
+        <footer>— Méabh Okafor, Editor-in-Chief</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="archive" class="archive">
+    <div class="container">
+      <div class="section-head">
+        <h3>From the archive</h3>
+        <a href="#" class="mono muted">All issues →</a>
+      </div>
+      <table>
+        <thead class="mono">
+          <tr><th>№</th><th>Date</th><th class="hide-sm">Section</th><th>Title</th><th class="hide-sm">Byline</th></tr>
+        </thead>
+        <tbody id="archiveBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="subscribe" class="subscribe">
+    <div class="container sub-grid">
+      <div>
+        <p class="mono kicker signal">The dispatch</p>
+        <h3 class="sub-title">One careful letter, every other Tuesday.</h3>
+      </div>
+      <div class="sub-form">
+        <p class="muted">New audits, methods, and the occasional field note from the desk. No tracking, no AI summaries, no urgency.</p>
+        <form id="subForm">
+          <input type="email" required placeholder="your.address@institution.edu" />
+          <button type="submit">Subscribe →</button>
+        </form>
+        <p class="mono fineprint" id="subMsg">Free. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <div class="logo-sm">Unbiased</div>
+        <p>An independent review for the people who build, audit, and answer for automated decisions.</p>
+      </div>
+      <div><div class="mono foot-h">Sections</div><ul><li>Audits</li><li>Methods</li><li>Field notes</li><li>Op-eds</li></ul></div>
+      <div><div class="mono foot-h">Masthead</div><ul><li>Editorial</li><li>Contributors</li><li>Ethics</li><li>Contact</li></ul></div>
+      <div><div class="mono foot-h">Colophon</div><p>Set in Fraunces &amp; Inter. Charts hand-tuned. Printed on recycled pixels.</p></div>
+    </div>
+    <div class="footer-bottom mono">
+      <div class="container row"><span>© 2026 Unbiased Review</span><span>Made with rigour</span></div>
+    </div>
+  </footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
